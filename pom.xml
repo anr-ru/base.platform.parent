@@ -52,6 +52,16 @@
     </developers>
     
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <configuration>
+                    <resolutionFuzziness>groupId</resolutionFuzziness>
+                    <includeGroupIds>ru.anr</includeGroupIds>
+                </configuration>
+            </plugin>
+        </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
