@@ -41,6 +41,21 @@
         <url>https://github.com/anr-ru/base.platform.parent/</url>
         <tag>HEAD</tag>
     </scm>
+    
+    <distributionManagement>
+      <repository>
+        <id>packagecloud-travis</id>
+        <url>
+          packagecloud+https://packagecloud.io/ruanr/baseplatform
+        </url>
+      </repository>
+      <snapshotRepository>
+        <id>packagecloud-travis</id>
+        <url>
+          packagecloud+https://packagecloud.io/ruanr/baseplatform
+        </url>
+      </snapshotRepository>
+    </distributionManagement>
 
     <developers>
         <developer>
@@ -83,6 +98,13 @@
                 </plugin>                            
             </plugins>
         </pluginManagement>
+        <extensions>
+           <extension>
+              <groupId>io.packagecloud.maven.wagon</groupId>
+              <artifactId>maven-packagecloud-wagon</artifactId>
+              <version>0.0.4</version>
+           </extension>           
+        </extensions>
     </build>
     
     <!-- Dependency management -->
