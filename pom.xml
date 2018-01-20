@@ -102,12 +102,12 @@
            <extension>
               <groupId>io.packagecloud.maven.wagon</groupId>
               <artifactId>maven-packagecloud-wagon</artifactId>
-              <version>0.0.4</version>
+              <version>0.0.6</version>
            </extension>           
         </extensions>
     </build>
     
-    <!-- Dependency management -->
+    <!-- Dependency management: for inclusion of all projects -->
     <dependencyManagement>
         <dependencies>
             <dependency>
