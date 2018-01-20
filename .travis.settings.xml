@@ -2,6 +2,27 @@
           Xmlns:Xsi="Http://Www.W3.Org/2001/XMLSchema-Instance"
           Xsi:SchemaLocation="Http://Maven.Apache.Org/SETTINGS/1.0.0
                       Http://Maven.Apache.Org/Xsd/Settings-1.0.0.Xsd">
+
+   <profiles>
+        <profile>
+            <id>repositories</id>
+            <activation><activeByDefault>true</activeByDefault></activation>
+            <repositories>
+		<repository>
+		    <id>anr-ru</id>
+    		    <name>ANR-RU Base Platform</name>
+    		    <url>https://packagecloud.io/ruanr/baseplatform/maven2</url>
+    		    <releases>
+    			<enabled>true</enabled>
+    		    </releases>
+    		    <snapshots>
+    			<enabled>true</enabled>
+    		    </snapshots>
+		</repository>
+            </repositories>
+        </profile>
+   </profiles>
+
   <Servers>
     <Server>
       <Id>packagecloud-travis</Id>
