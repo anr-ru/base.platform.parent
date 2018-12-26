@@ -20,11 +20,11 @@
     <parent>
         <groupId>ru.anr</groupId>
         <artifactId>config.java</artifactId>
-        <version>0.9-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>base.platform.parent</artifactId>
-    <version>0.5-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>Base Platform Parent</name>
@@ -95,16 +95,9 @@
                              see: https://java.net/jira/browse/GLASSFISH-20721  -->
                         <useSystemClassLoader>false</useSystemClassLoader>
                     </configuration>
-                </plugin>                            
+                </plugin>
             </plugins>
         </pluginManagement>
-        <extensions>
-           <extension>
-              <groupId>io.packagecloud.maven.wagon</groupId>
-              <artifactId>maven-packagecloud-wagon</artifactId>
-              <version>0.0.6</version>
-           </extension>           
-        </extensions>
     </build>
     
     <!-- Dependency management: for inclusion of all projects -->

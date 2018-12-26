@@ -2,7 +2,6 @@
           xmlns:Xsi="Http://Www.W3.Org/2001/XMLSchema-Instance"
           xsi:schemaLocation="Http://Maven.Apache.Org/SETTINGS/1.0.0
                       Http://Maven.Apache.Org/Xsd/Settings-1.0.0.Xsd">
-
    <profiles>
         <profile>
             <id>repositories</id>
