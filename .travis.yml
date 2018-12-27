@@ -20,7 +20,7 @@ test:
 
 deploy:
   provider: script
-  script: "mvn deploy -s ./.mvn/ci-settings.xml -DskipTests"
+  script: "mvn deploy -DskipTests"
   skip_cleanup: true
   condition: "$TRAVIS_TAG = ^v.*$"
   on:
