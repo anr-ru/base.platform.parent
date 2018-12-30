@@ -96,47 +96,6 @@
         </pluginManagement>
     </build>
     
-    <!-- Dependency management: for inclusion of all projects -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.utils</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.tests</artifactId>
-                <version>${project.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.services</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.services</artifactId>
-                <version>${project.version}</version>
-                <scope>test</scope>
-                <classifier>tests</classifier>
-            </dependency>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.facade</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.anr</groupId>
-                <artifactId>base.facade</artifactId>
-                <version>${project.version}</version>
-                <scope>test</scope>
-                <classifier>tests</classifier>
-            </dependency>
-        </dependencies>    
-    </dependencyManagement>    
-    
     <!-- Dependencies -->
     <dependencies>
         <dependency>
