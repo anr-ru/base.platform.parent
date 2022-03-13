@@ -21,4 +21,4 @@ jobs:
     - stage: deploy
       if: (branch = master) || (tag IS present)
       provider: script
-      script: "mvn -P ci deploy -DskipTests --skip-errors"
+      script: "mvn -P ci deploy -DskipTests"
