@@ -6,14 +6,15 @@ What is the **Base.Platform** project?
 
 Very often when you are just starting a new Java/Spring project you may feel a lack of some tools/libraries/functions
 or just ready solutions that improve your speed of writing the code. Probably, you always write over and over again the same
-convenient approaches in many projects again like comparisons of two possible null values, conversions of a string
-to the decimal value, transaction settings or even a framework that works in the EJB environment with a full
-support of distributed transactions. 
+convenient functions and approaches in many projects like comparisons of two possible null values, conversions of a string
+to the decimal value, transaction settings, a framework that works in the EJB environment with a full
+support of distributed transactions or a ready solution for implementing REST services.
 
 You do not need to start it from scratch anymore - just plug them in.
 
 **Base.Platform** is a tool for a fast creation of Enterprise-ready applications: from basic utilities for simple
-operations to robust EJB environments with a ready-to-market framework for RESTful web services.
+operations to robust EJB environments with a ready-to-market framework for RESTful web services. It is based on huge
+experience in development of applications for several decades and also contain a full-fledged set of required libraries.
 
 
 ### Base.Platform Parent
