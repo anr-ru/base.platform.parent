@@ -19,8 +19,8 @@
 
     <parent>
         <groupId>org.anrruf</groupId>
-        <artifactId>config.java</artifactId>
-        <version>2.0.3</version>
+        <artifactId>base.config</artifactId>
+        <version>2.0.4</version>
     </parent>
 
     <artifactId>base.platform.parent</artifactId>
@@ -44,12 +44,12 @@
 
     <distributionManagement>
         <repository>
-            <id>packagecloud-travis</id>
-            <url>packagecloud+https://packagecloud.io/ruanr/baseplatform</url>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/39021055/packages/maven</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud-travis</id>
-            <url>packagecloud+https://packagecloud.io/ruanr/baseplatform</url>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/39021055/packages/maven</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -93,13 +93,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <extensions>
-            <extension>
-                <groupId>io.packagecloud.maven.wagon</groupId>
-                <artifactId>maven-packagecloud-wagon</artifactId>
-                <version>0.0.6</version>
-            </extension>
-        </extensions>
     </build>
     
     <!-- Dependencies -->

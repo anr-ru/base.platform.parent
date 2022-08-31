@@ -8,9 +8,8 @@
             <activation><activeByDefault>true</activeByDefault></activation>
             <repositories>
         	<repository>
-        	    <id>packagecloud-travis</id>
-        	    <name>Base Platform</name>
-        	    <url>https://packagecloud.io/ruanr/baseplatform/maven2</url>
+        	    <id>base-platform</id>
+        	    <url>https://gitlab.com/api/v4/projects/39021055/packages/maven</url>
         	    <releases><enabled>true</enabled></releases>
         	    <snapshots><enabled>true</enabled></snapshots>
         	</repository>
@@ -20,8 +19,15 @@
 
     <servers>
         <server>
-          <id>packagecloud-travis</id>
-          <password>${env.PACKAGECLOUD_TOKEN}</password>
+            <id>gitlab</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>Deploy-Token</name>
+                        <value>${env.GITLAB_DEPLOY_TOKEN}</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
         </server>
     </servers>
 </settings>
