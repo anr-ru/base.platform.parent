@@ -1,5 +1,5 @@
 <!-- 
- * Copyright 2014 the original author or authors.
+ * Copyright 2014-2022 the original author or authors.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -18,13 +18,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ru.anr</groupId>
-        <artifactId>config.java</artifactId>
-        <version>1.0.0</version>
+        <groupId>org.anrruf</groupId>
+        <artifactId>base.config</artifactId>
+        <version>2.0.4</version>
     </parent>
 
     <artifactId>base.platform.parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>Base Platform Parent</name>
@@ -41,27 +41,18 @@
         <url>https://github.com/anr-ru/base.platform.parent/</url>
         <tag>HEAD</tag>
     </scm>
-    
+
     <distributionManagement>
-      <repository>
-        <id>packagecloud-travis</id>
-        <url>packagecloud+https://packagecloud.io/ruanr/baseplatform</url>
-      </repository>
-      <snapshotRepository>
-        <id>packagecloud-travis</id>
-        <url>packagecloud+https://packagecloud.io/ruanr/baseplatform</url>
-      </snapshotRepository>
+        <repository>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/39021055/packages/maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/39021055/packages/maven</url>
+        </snapshotRepository>
     </distributionManagement>
 
-    <developers>
-        <developer>
-            <id>alex</id>
-            <name>Alexey Romanchuk</name>
-            <email>alexey.p.romanchuk@gmail.com</email>
-            <timezone>5</timezone>
-        </developer>
-    </developers>
-    
     <build>
         <plugins>
             <plugin>
@@ -69,33 +60,17 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <configuration>
                     <resolutionFuzziness>groupId</resolutionFuzziness>
-                    <includeGroupIds>ru.anr</includeGroupIds>
+                    <includeGroupIds/>
                 </configuration>
             </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-source-plugin</artifactId>
-              <executions>
-                <execution>
-                  <id>attach-sources</id>
-                  <goals>
-                    <goal>jar</goal>
-                  </goals>
-                </execution>
-              </executions>
             </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
-              <executions>
-                <execution>
-                  <id>attach-javadocs</id>
-                  <goals>
-                    <goal>jar</goal>
-                  </goals>
-                </execution>
-              </executions>
-            </plugin>                        
+            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
